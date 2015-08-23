@@ -38,6 +38,6 @@ function BSImpliedVol(S,K,r,T,δ,premium,iscall)
   return σnext
 end
 
-export BSForward, BSPut, BSCall, BSImpliedVol, BSCallVega, BSPremium
+export BSForward, BSPut, BSCall, BSImpliedVol, BSCallVega, BSPremium, N, Nx, d1, d2
 end #module
 
