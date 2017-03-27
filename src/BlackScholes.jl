@@ -24,7 +24,7 @@ MAX_ITERATIONS = 100
 function BSImpliedVol(S,K,r,T,δ,premium,iscall)
   if iscall
     C = premium
-  else # convert usign put-call parity
+  else # convert using put-call parity
     C = premium + BSForward(S,K,r,T,δ)
   end
   σ = 0.0
@@ -40,4 +40,3 @@ end
 
 export BSForward, BSPut, BSCall, BSImpliedVol, BSCallVega, BSPremium, N, Nx, d1, d2
 end #module
-
